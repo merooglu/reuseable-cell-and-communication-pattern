@@ -45,6 +45,7 @@ class DatePopupViewController: UIViewController {
     }
 
     @IBAction func saveDateButtonTapped(_ sender: Any) {
+        
         NotificationCenter.default.post(name: .saveDateTime, object: self)
         
         if showTimePicker {
@@ -55,6 +56,10 @@ class DatePopupViewController: UIViewController {
         }
         
         dismiss(animated: true)
+    }
+    
+    deinit {
+        print("DatePopupViewController was de-initialized.")
     }
     
 }

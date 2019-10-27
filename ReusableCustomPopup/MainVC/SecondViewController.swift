@@ -21,13 +21,13 @@ class SecondViewController: UIViewController {
             let destinationVC = segue.destination as! DatePopupViewController
             destinationVC.showTimePicker = false
             // 1. aynı fonksiyon type olan bir fonksiyona atama
-//            destinationVC.onSave = setLabel(_:)
+            destinationVC.onSave = setLabel(_:)
             
             // 2. Closure kullanma
-            destinationVC.onSave = { (data) in
-                self.dateLabel.text = data
-                
-            }
+//            destinationVC.onSave = { (data) in
+//                self.dateLabel.text = data
+//
+//            }
             
         }
     }

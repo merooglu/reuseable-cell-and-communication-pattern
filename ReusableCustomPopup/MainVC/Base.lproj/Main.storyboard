@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--First-->
+        <!--Notification-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="ReusableCustomPopup" customModuleProvider="target" sceneMemberID="viewController">
@@ -46,6 +46,14 @@
                                     <segue destination="Jdh-WW-WVL" kind="presentation" identifier="toDatePopupViewControllerSegue" id="hKV-cp-8ch"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tVi-3L-c9i">
+                                <rect key="frame" x="138" y="543" width="99" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Navigate away"/>
+                                <connections>
+                                    <segue destination="rgb-lM-heg" kind="presentation" id="1nC-JL-hHZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -56,7 +64,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Notification" image="first" badgeValue="1" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="dateLabel" destination="Hsv-uG-ZYP" id="lTm-cR-9A9"/>
                     </connections>
@@ -64,6 +72,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241384"/>
+        </scene>
+        <!--NotificationViewController-->
+        <scene sceneID="FJR-OY-fV7">
+            <objects>
+                <viewControllerPlaceholder storyboardName="NotificationViewController" id="rgb-lM-heg" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aut-Hh-gt6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1385" y="-485"/>
         </scene>
         <!--SelectTimeViewController-->
         <scene sceneID="S2Z-HL-8Pr">
@@ -75,7 +91,7 @@
             </objects>
             <point key="canvasLocation" x="-1" y="529"/>
         </scene>
-        <!--Second-->
+        <!--Callback-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="ReusableCustomPopup" customModuleProvider="target" sceneMemberID="viewController">
@@ -111,6 +127,14 @@
                                     <segue destination="Jdh-WW-WVL" kind="presentation" identifier="toDatePopupViewControllerSegue" modalTransitionStyle="crossDissolve" id="aAj-mg-kmA"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="poa-Hr-i38">
+                                <rect key="frame" x="132" y="440" width="99" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Navigate away"/>
+                                <connections>
+                                    <segue destination="zPW-UU-fK4" kind="presentation" id="f8z-RO-bDB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -121,7 +145,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Callback" image="second" badgeValue="2" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="dateLabel" destination="UwL-RM-4s5" id="WS1-4d-H15"/>
                     </connections>
@@ -129,6 +153,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="750" y="360"/>
+        </scene>
+        <!--CallBackViewController-->
+        <scene sceneID="O1K-61-4Ef">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CallBackViewController" id="zPW-UU-fK4" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G8M-o9-1CR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1370" y="508"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -138,6 +170,8 @@
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.98464220759999999" green="0.89642709490000005" blue="0.1207388267" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>

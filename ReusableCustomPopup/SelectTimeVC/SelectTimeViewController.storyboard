@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Select Time View Controller-->
+        <!--Notification-->
         <scene sceneID="g18-19-hhH">
             <objects>
                 <viewController id="rBw-FN-IWb" customClass="SelectTimeViewController" customModule="ReusableCustomPopup" customModuleProvider="target" sceneMemberID="viewController">
@@ -46,6 +46,14 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39J-1L-kAV">
+                                <rect key="frame" x="138" y="388" width="99" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Navigate away"/>
+                                <connections>
+                                    <segue destination="fzd-hD-ucI" kind="presentation" id="ihR-he-BWp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -56,7 +64,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OM4-Fp-sKS"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="recents" id="ERU-e6-AbF"/>
+                    <tabBarItem key="tabBarItem" title="Notification" image="first" badgeValue="3" id="ERU-e6-AbF"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="timeLabel" destination="2GY-di-FOd" id="UD5-0B-YqN"/>
@@ -66,5 +74,16 @@
             </objects>
             <point key="canvasLocation" x="118" y="-30"/>
         </scene>
+        <!--DelegateViewController-->
+        <scene sceneID="Rhd-ay-ola">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DelegateViewController" id="fzd-hD-ucI" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eOX-Jz-uey" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="776" y="-31"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="first" width="30" height="30"/>
+    </resources>
 </document>

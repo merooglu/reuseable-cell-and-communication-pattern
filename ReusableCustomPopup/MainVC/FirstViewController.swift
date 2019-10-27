@@ -21,13 +21,13 @@ class FirstViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         // 1. NOTİFİCATİON OLD WAY
-        //        NotificationCenter.default.addObserver(self, selector: #selector(self.handlePopupClosing(notification:)), name: .saveDateTime, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.handlePopupClosing(notification:)), name: .saveDateTime, object: nil)
         
-        // 1. NOTİFİCATİON NEW WAY
-        observer = NotificationCenter.default.addObserver(forName: .saveDateTime, object: nil, queue: OperationQueue.main) { (notif) in
-            let datePopupVC = notif.object as! DatePopupViewController
-            self.dateLabel.text = datePopupVC.formattedDate
-        }
+        // 2. NOTİFİCATİON NEW WAY
+        //        observer = NotificationCenter.default.addObserver(forName: .saveDateTime, object: nil, queue: OperationQueue.main) { (notif) in
+        //            let datePopupVC = notif.object as! DatePopupViewController
+        //            self.dateLabel.text = datePopupVC.formattedDate
+        //        }
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -38,11 +38,11 @@ class FirstViewController: UIViewController {
         }
     }
     
-// 1. NOTİFİCATİON OLD WAY
-//    @objc func handlePopupClosing(notification: Notification) {
-//        let dateVC = notification.object as! DatePopupViewController
-//        dateLabel.text = dateVC.formattedDate
-//    }
+    // 1. NOTİFİCATİON OLD WAY  
+    @objc func handlePopupClosing(notification: Notification) {
+        let dateVC = notification.object as! DatePopupViewController
+        dateLabel.text = dateVC.formattedDate
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toDatePopupViewControllerSegue" {

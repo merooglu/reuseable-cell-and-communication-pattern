@@ -19,6 +19,12 @@
 		911E5A272364D45600147FCD /* SelectTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911E5A262364D45600147FCD /* SelectTimeViewController.swift */; };
 		911E5A292364E2B300147FCD /* NotificationNameExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911E5A282364E2B300147FCD /* NotificationNameExtension.swift */; };
 		911E5A2E2364F99600147FCD /* PopupDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911E5A2D2364F99600147FCD /* PopupDelegate.swift */; };
+		916195952365AA50006D707A /* NotificationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 916195942365AA50006D707A /* NotificationViewController.storyboard */; };
+		916195972365AB68006D707A /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916195962365AB68006D707A /* NotificationViewController.swift */; };
+		9161959A2365BB70006D707A /* CallBackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916195992365BB70006D707A /* CallBackViewController.swift */; };
+		9161959C2365BB81006D707A /* CallBackViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9161959B2365BB81006D707A /* CallBackViewController.storyboard */; };
+		9161959F2365CCCF006D707A /* DelegateViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9161959E2365CCCF006D707A /* DelegateViewController.storyboard */; };
+		916195A12365CF67006D707A /* DelegateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916195A02365CF67006D707A /* DelegateViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +42,12 @@
 		911E5A262364D45600147FCD /* SelectTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTimeViewController.swift; sourceTree = "<group>"; };
 		911E5A282364E2B300147FCD /* NotificationNameExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationNameExtension.swift; sourceTree = "<group>"; };
 		911E5A2D2364F99600147FCD /* PopupDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupDelegate.swift; sourceTree = "<group>"; };
+		916195942365AA50006D707A /* NotificationViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NotificationViewController.storyboard; sourceTree = "<group>"; };
+		916195962365AB68006D707A /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		916195992365BB70006D707A /* CallBackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallBackViewController.swift; sourceTree = "<group>"; };
+		9161959B2365BB81006D707A /* CallBackViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CallBackViewController.storyboard; sourceTree = "<group>"; };
+		9161959E2365CCCF006D707A /* DelegateViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DelegateViewController.storyboard; sourceTree = "<group>"; };
+		916195A02365CF67006D707A /* DelegateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +86,9 @@
 				911E5A2C2364F6DC00147FCD /* MainVC */,
 				911E5A2B2364F19800147FCD /* SelectTimeVC */,
 				911E5A2A2364F17500147FCD /* DatePopupVC */,
+				916195932365AA03006D707A /* NotificationVC */,
+				916195982365BB3D006D707A /* CallBackVC */,
+				9161959D2365CCB0006D707A /* DelegateVC */,
 				911E5A142364CD8C00147FCD /* Assets.xcassets */,
 				911E5A162364CD8C00147FCD /* LaunchScreen.storyboard */,
 				911E5A192364CD8C00147FCD /* Info.plist */,
@@ -107,6 +122,33 @@
 				911E5A112364CD8A00147FCD /* Main.storyboard */,
 			);
 			path = MainVC;
+			sourceTree = "<group>";
+		};
+		916195932365AA03006D707A /* NotificationVC */ = {
+			isa = PBXGroup;
+			children = (
+				916195942365AA50006D707A /* NotificationViewController.storyboard */,
+				916195962365AB68006D707A /* NotificationViewController.swift */,
+			);
+			path = NotificationVC;
+			sourceTree = "<group>";
+		};
+		916195982365BB3D006D707A /* CallBackVC */ = {
+			isa = PBXGroup;
+			children = (
+				916195992365BB70006D707A /* CallBackViewController.swift */,
+				9161959B2365BB81006D707A /* CallBackViewController.storyboard */,
+			);
+			path = CallBackVC;
+			sourceTree = "<group>";
+		};
+		9161959D2365CCB0006D707A /* DelegateVC */ = {
+			isa = PBXGroup;
+			children = (
+				9161959E2365CCCF006D707A /* DelegateViewController.storyboard */,
+				916195A02365CF67006D707A /* DelegateViewController.swift */,
+			);
+			path = DelegateVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,10 +209,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				916195952365AA50006D707A /* NotificationViewController.storyboard in Resources */,
+				9161959C2365BB81006D707A /* CallBackViewController.storyboard in Resources */,
 				911E5A182364CD8C00147FCD /* LaunchScreen.storyboard in Resources */,
 				911E5A252364D40F00147FCD /* SelectTimeViewController.storyboard in Resources */,
 				911E5A152364CD8C00147FCD /* Assets.xcassets in Resources */,
 				911E5A232364D1F900147FCD /* DatePopupViewController.storyboard in Resources */,
+				9161959F2365CCCF006D707A /* DelegateViewController.storyboard in Resources */,
 				911E5A132364CD8A00147FCD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -184,10 +229,13 @@
 			files = (
 				911E5A2E2364F99600147FCD /* PopupDelegate.swift in Sources */,
 				911E5A102364CD8A00147FCD /* SecondViewController.swift in Sources */,
+				916195972365AB68006D707A /* NotificationViewController.swift in Sources */,
 				911E5A272364D45600147FCD /* SelectTimeViewController.swift in Sources */,
 				911E5A202364D14E00147FCD /* DatePopupViewController.swift in Sources */,
+				916195A12365CF67006D707A /* DelegateViewController.swift in Sources */,
 				911E5A292364E2B300147FCD /* NotificationNameExtension.swift in Sources */,
 				911E5A0C2364CD8A00147FCD /* AppDelegate.swift in Sources */,
+				9161959A2365BB70006D707A /* CallBackViewController.swift in Sources */,
 				911E5A0E2364CD8A00147FCD /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
