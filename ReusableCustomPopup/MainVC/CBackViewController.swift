@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  CBackViewController.swift
 //  ReusableCustomPopup
 //
 //  Created by Mehmet Eroğlu on 26.10.2019.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class CBackViewController: UIViewController {
 
     @IBOutlet weak var dateLabel: UILabel!
     

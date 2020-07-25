@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  NotifCenterViewController.swift
 //  ReusableCustomPopup
 //
 //  Created by Mehmet Eroğlu on 26.10.2019.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class NotifCenterViewController: UIViewController {
 
     @IBOutlet weak var dateLabel: UILabel!
     

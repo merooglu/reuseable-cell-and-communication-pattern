@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		911E5A0C2364CD8A00147FCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911E5A0B2364CD8A00147FCD /* AppDelegate.swift */; };
-		911E5A0E2364CD8A00147FCD /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911E5A0D2364CD8A00147FCD /* FirstViewController.swift */; };
-		911E5A102364CD8A00147FCD /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911E5A0F2364CD8A00147FCD /* SecondViewController.swift */; };
+		911E5A0E2364CD8A00147FCD /* NotifCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911E5A0D2364CD8A00147FCD /* NotifCenterViewController.swift */; };
+		911E5A102364CD8A00147FCD /* CBackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911E5A0F2364CD8A00147FCD /* CBackViewController.swift */; };
 		911E5A132364CD8A00147FCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 911E5A112364CD8A00147FCD /* Main.storyboard */; };
 		911E5A152364CD8C00147FCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 911E5A142364CD8C00147FCD /* Assets.xcassets */; };
 		911E5A182364CD8C00147FCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 911E5A162364CD8C00147FCD /* LaunchScreen.storyboard */; };
@@ -30,8 +30,8 @@
 /* Begin PBXFileReference section */
 		911E5A082364CD8A00147FCD /* ReusableCustomPopup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReusableCustomPopup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		911E5A0B2364CD8A00147FCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		911E5A0D2364CD8A00147FCD /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		911E5A0F2364CD8A00147FCD /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		911E5A0D2364CD8A00147FCD /* NotifCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifCenterViewController.swift; sourceTree = "<group>"; };
+		911E5A0F2364CD8A00147FCD /* CBackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBackViewController.swift; sourceTree = "<group>"; };
 		911E5A122364CD8A00147FCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		911E5A142364CD8C00147FCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		911E5A172364CD8C00147FCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -117,8 +117,8 @@
 		911E5A2C2364F6DC00147FCD /* MainVC */ = {
 			isa = PBXGroup;
 			children = (
-				911E5A0D2364CD8A00147FCD /* FirstViewController.swift */,
-				911E5A0F2364CD8A00147FCD /* SecondViewController.swift */,
+				911E5A0D2364CD8A00147FCD /* NotifCenterViewController.swift */,
+				911E5A0F2364CD8A00147FCD /* CBackViewController.swift */,
 				911E5A112364CD8A00147FCD /* Main.storyboard */,
 			);
 			path = MainVC;
@@ -228,7 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				911E5A2E2364F99600147FCD /* PopupDelegate.swift in Sources */,
-				911E5A102364CD8A00147FCD /* SecondViewController.swift in Sources */,
+				911E5A102364CD8A00147FCD /* CBackViewController.swift in Sources */,
 				916195972365AB68006D707A /* NotificationViewController.swift in Sources */,
 				911E5A272364D45600147FCD /* SelectTimeViewController.swift in Sources */,
 				911E5A202364D14E00147FCD /* DatePopupViewController.swift in Sources */,
@@ -236,7 +236,7 @@
 				911E5A292364E2B300147FCD /* NotificationNameExtension.swift in Sources */,
 				911E5A0C2364CD8A00147FCD /* AppDelegate.swift in Sources */,
 				9161959A2365BB70006D707A /* CallBackViewController.swift in Sources */,
-				911E5A0E2364CD8A00147FCD /* FirstViewController.swift in Sources */,
+				911E5A0E2364CD8A00147FCD /* NotifCenterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
